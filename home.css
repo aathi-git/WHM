@@ -163,3 +163,16 @@ section{
 .card-body {
     text-align: center;
 }
+
+<style>
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
