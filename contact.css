@@ -1,9 +1,22 @@
+/* Set a minimum height for the content area to push the footer down */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* At least 100% of the viewport height */
+    position: relative; /* Needed for footer positioning */
+}
+
+/* Style the footer */
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    position: absolute; /* Position the footer absolutely */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Full width */
 }
 
+/* Style footer links */
 footer a {
     color: white;
     text-decoration: none;
