@@ -4,74 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHM</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add your custom CSS for the pure black theme -->
     <link rel="stylesheet" href="home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <script
-     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
-
-    <!--header-->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
           <a class="navbar-brand" href="home.html">WHM</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-          </div>
+
+        <nav role="navigation" class="nav-menu w-nav-menu"><a href="#Contact" class="nav-link w-nav-link" style="max-width: 1200px; color: #fff;">Let’s work togather</a>
+        </nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-black text-white text-center py-5">
+        <div class="container">
+          <h1 data-w-id="84e2e86e-4c05-3c07-dc40-58fc8f2304f4" style="font-family: Archivo, sans-serif; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; " class="title h1 white banner-heading">
+            Digital
+            <br>
+            Creator
+          </h1>
+            <a href="#about" data-w-id="73e72016-c44e-a814-7a48-2e45403915c0" style="opacity: 1;" class="scroll-down-button w-inline-block w--current">
+              <img src="scroll-down.svg" loading="lazy" alt="">
+            </a>
         </div>
-      </nav>
+    </header>
 
-    <!--banner-->
-
-    <section id="banner">
-      <p class="text-center">I am a <span> Freelancer</span></p>
-      <p class="text-center">I am a <span>Artist</span></p>
-      <p class="text-center">I am a <span>Developer</span></p>
-      <p class="text-center">I am <span>Designer</span></p>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>A tech enthusiast with a passion for learning and helping others. I have a basic understanding of security, web development, Linux administration, Android root system, and AI. I am always looking for new ways to expand my knowledge and skills.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="aboutme1.jpg" alt="Your Photo" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--mypro-->
-    <section id="project" class="project-animation">
-      <h2>My Project</h2>
-      <p>Public Use Projects and Freelance Projects.</p>
-          <!-- Projects Section -->
-    <section id="projects" class="container my-5">
-      <div class="row custom-row">
-          <!-- Project 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                  <img src="source/p1.jpg" class="card-img-top img-fluid" alt="Project 1">
-                  <div class="card-body">
-                      <h5 class="card-title">ChatWell</h5>
-                      <p class="card-text">To utilize this project, go here. I made this with the intention of making everyone laugh and have fun. This Telegram bot connects and chats with strangers.</p>
-                      <a href="https://t.me/chatwellwh_bot" class="btn btn-primary">Telegram</a>
+    <!-- Portfolio Section 
+    <section id="projects" class="bg-black py-5">
+        <div class="container">
+            <h2 class="text-center text-white">Projects</h2>
+            <div class="row">
+            </div>
+        </div>
+    </section> -->
+    <!-- projects section-->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+          <h2 class="text-center">Projects</h2>
+          <div class="row">
+              <!-- Project 1: Chatwell -->
+              <div class="col-lg-4">
+                  <div class="portfolio-item book-animation">
+                      <img src="p1.png" alt="Chatwell Project" class="img-fluid">
+                      <h3 class="project-title">Chatwell</h3>
+                      <p class="project-description">It's like a strangers metup platform bot.</p>
+                      <a href="https://t.me/chatwellwh_bot" class="btn btn-primary">Viewthat</a>
                   </div>
               </div>
+              <!-- Add more project items as needed -->
           </div>
-
       </div>
   </section>
-    </section>
-    <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  &copy; 2023 whitehat.mr - All rights reserved.
-              </div>
-          </div>
-      </div>
-    </footer>
-    
-  </body>
+
+
+
+
+
+
+    <!-- Contact Section
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center text-white">Feel free to get in touch with me.</p>
+            
+        </div>
+    </section> -->
+    <!--contact section-->
+    <div id="Contact" data-w-id="4eacdcde-238e-2992-a2ef-6a34e770caea" style="opacity: 1; padding-top: 100px; padding-bottom: 110px;" class="section cta wf-section"><div class="container w-container"><div class="cta"><div class="cta-text">Still confused. then,</div><a href="contact.html" class="title h1 cta">Let's Talk</a><div class="cta-text">or send an email to <a href="whm.head@gmail.com" class="cta-text-link">whm.head@gmail.com</a></div></div></div></div>
+
+    <!--footer section-->
+    <div class="footer-text">Crafted by <a href="https://www.instagram.com/whitehat.mr" target="_blank" class="footer-link">@whitehat.mr</a> | Powered by <a href="https://www.instagram.com/whitehat.mr" target="_blank" class="footer-link">WHM</a><br></div>
+
+
+    <!-- Add Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
